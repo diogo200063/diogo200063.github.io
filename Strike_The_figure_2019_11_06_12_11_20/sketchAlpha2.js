@@ -35,6 +35,9 @@ var vidasJogador = 3, vidasObj = 3;
 var pontos = 0;
 var atirando = false;
 
+var obj;
+var qntLoop = 0;
+
 function setup() {
   createCanvas(800, 600);
 }
@@ -448,3 +451,4 @@ function gerarObjeto(novoObj){
     case 'ARROW':
       image(imgFLECHA, xObj, yObj, 100, 100);
   }
+}
