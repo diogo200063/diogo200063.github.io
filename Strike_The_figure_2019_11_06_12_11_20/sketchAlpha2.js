@@ -132,6 +132,7 @@ function jogar(){
   image(imgNave, xNave, yNave, 100, 100);
   
   if(vidasObj>0){
+    gerarCabecalho(false);
     rect(xObj, yObj, 100, 100);
   
     yObj += 1;
@@ -146,6 +147,7 @@ function jogar(){
     xObj = random(700);
     yObj = 0;
     pontos++;
+    gerarCabecalho(false);
   }
   
   if(dist(xObj, yObj, xNave, yNave) < 100){
@@ -340,5 +342,80 @@ function btnMenu(){
 function btnVoltar(){
   if(keyCode == BACKSPACE){
     telaAtiva = 0; 
+  }
+}
+
+function gerarCabecalho(novoObj){
+  textSize(30);
+  fill('rgb(229, 57, 53)');
+  stroke(0);
+  strokeWeight(5);
+  if(novoObj || qntLoop === 1){
+    obj = figura();
+  }
+
+  text(obj, 30, 50);
+  
+  textSize(30);
+  fill('rgb(229, 57, 53)');
+  stroke(0);
+  strokeWeight(5);
+  text('LIFE:', 350, 50);
+  
+  textSize(30);
+  fill('rgb(229, 57, 53)');
+  stroke(0);
+  strokeWeight(5);
+  text('PONTOS: ' + pontos, 600, 50);
+  
+  noStroke();
+  fill('rgb(213, 0, 0)');
+}
+
+function figura(){
+  var valor = Math.floor(Math.random() * 21);
+  switch(valor){
+    case 0:
+      return 'CIRCLE';
+    case 1:
+      return 'TRIANGLE';
+    case 2:
+      return 'SQUARE';
+    case 3:
+      return 'RECTANGLE';
+    case 4:
+      return 'PARALLELEPIPED';
+    case 5:
+      return 'TRAPEZE';
+    case 6:
+      return 'ELIPSE';
+    case 7:
+      return 'STAR';
+    case 8:
+      return 'PENTAGON';
+    case 9:
+      return 'HEXAGON';
+    case 10:
+      return 'MOON';
+    case 11:
+      return 'SUN';
+    case 12:
+      return 'CROSS';
+    case 13:
+      return 'RING';
+    case 14:
+      return 'PYRAMID';
+    case 15:
+      return 'BONE';
+    case 16:
+      return 'HEART';
+    case 17:
+      return 'RHOMBUS';
+    case 18:
+      return 'SPADE';
+    case 19:
+      return 'CLUBS';
+    case 20:
+      return 'ARROW';
   }
 }
