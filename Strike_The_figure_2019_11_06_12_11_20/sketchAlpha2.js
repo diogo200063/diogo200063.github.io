@@ -126,6 +126,8 @@ function menu(){
 }
 
 function jogar(){
+
+  qntLoop++;
   
   background(imgJogo);
   
@@ -147,37 +149,18 @@ function jogar(){
     xObj = random(700);
     yObj = 0;
     pontos++;
-    gerarCabecalho(false);
+    gerarCabecalho(true);
   }
   
-  if(dist(xObj, yObj, xNave, yNave) < 100){
-    xNave = 300;
-    yNave = 500;
+  if(dist(xObj, yObj, xNave, yNave) < 100 || dist(xObj, yObj, xObj, 0) === 500){
+    if (dist(xObj, yObj, xNave, yNave) < 100) {
+      xNave = 300;
+      yNave = 500;
+      yObj = 0;
+      xObj = random(700);
+    }
     vidasJogador--;
-    yObj = 0;
-    xObj = random(700);
   }
-  
-  textSize(40);
-  fill('rgb(229, 57, 53)');
-  stroke(0);
-  strokeWeight(5);
-  text('CIRCLE', 30, 50);
-  
-  textSize(30);
-  fill('rgb(229, 57, 53)');
-  stroke(0);
-  strokeWeight(5);
-  text('LIFE:', 350, 50);
-  
-  textSize(30);
-  fill('rgb(229, 57, 53)');
-  stroke(0);
-  strokeWeight(5);
-  text('PONTOS: '+pontos, 600, 50);
-  
-  noStroke();
-  fill('rgb(213, 0, 0)');
   
    if(vidasJogador == 3){
     image(imgCoracao, 440, 20, 40, 40);
