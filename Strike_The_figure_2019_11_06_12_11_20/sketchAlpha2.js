@@ -1,5 +1,31 @@
 var telaAtiva = 0, opcao = 1;
-var imgMenu, imgEquipe, imgJogo, imgNave, imgDisparo, imgCoracao;
+var imgMenu; 
+var imgEquipe; 
+var imgJogo; 
+var imgNave; 
+var imgDisparo; 
+var imgCoracao;
+var imgANEL;
+var imgESTRELA;
+var imgCIRCULO;
+var imgCRUZ;
+var imgLOSANGO;
+var imgSOL;
+var imgPENTAGONO;
+var imgPIRAMIDE;
+var imgOSSO;
+var imgCORACAO;
+var imgELIPSE;
+var imgLUA;
+var imgPARALELE;
+var imgFLECHA;
+var imgHEXAGONO;
+var imgESPADA;
+var imgRETANGULO;
+var imgTRAPEZIO;
+var imgTRIANGULO;
+var imgPAUS;
+var imgQUADRADO;
 var y = 150;
 
 var xObj = 150, yObj = 100;
@@ -20,6 +46,28 @@ function preload() {
   imgNave = loadImage('F5S4.png');
   imgDisparo = loadImage('disparo.png');
   imgCoracao = loadImage('coracao.png');
+
+  imgANEL = loadImage('1-jpg.jpg');
+  imgESTRELA = loadImage('1-png.png');
+  imgCIRCULO= loadImage('2-jpg.jpg');
+  imgCRUZ = loadImage('2-png.png');
+  imgLOSANGO = loadImage('3-png.png');
+  imgSOL= loadImage('4-jpg.jpg');
+  imgPENTAGONO = loadImage('4-png.png');
+  imgPIRAMIDE = loadImage('5-jpg.jpg');
+  imgOSSO = loadImage('6-png.png');
+  imgCORACAO = loadImage('7-jpg.jpg');
+  imgELIPSE = loadImage('7-png.png');
+  imgLUA = loadImage('8-jpg.jpg');
+  imgPARALELE = loadImage('8-png.png');
+  imgFLECHA = loadImage('9-jpg.jpg');
+  imgHEXAGONO = loadImage('10-jpg.jpg');
+  imgESPADA = loadImage('10-png.png');
+  imgRETANGULO = loadImage('11-png.png');
+  imgTRAPEZIO = loadImage('12-png.png');
+  imgTRIANGULO = loadImage('13-png.png');
+  imgPAUS = loadImage('14-png.png');
+  imgQUADRADO = loadImage('15-png.png');
 }
 
 function draw() {
