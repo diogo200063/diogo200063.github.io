@@ -402,3 +402,49 @@ function figura(){
       return 'ARROW';
   }
 }
+
+function gerarObjeto(novoObj){
+  switch(obj){
+    case 'CIRCLE':
+      image(imgCIRCULO, xObj, yObj, 100, 100);
+    case 'TRIANGLE':
+      image(imgTRIANGULO, xObj, yObj, 100, 100);
+    case 'SQUARE':
+      image(imgQUADRADO, xObj, yObj, 100, 100);
+    case 'RECTANGLE':
+      image(imgRETANGULO, xObj, yObj, 100, 100);
+    case 'PARALLELEPIPED':
+      image(imgPARALELE, xObj, yObj, 100, 100);
+    case 'TRAPEZE':
+      image(imgTRAPEZIO, xObj, yObj, 100, 100);
+    case 'ELIPSE':
+      image(imgELIPSE, xObj, yObj, 100, 100);
+    case 'STAR':
+      image(imgESTRELA, xObj, yObj, 100, 100);
+    case 'PENTAGON':
+      image(imgPENTAGONO, xObj, yObj, 100, 100);
+    case 'HEXAGON':
+      image(imgHEXAGONO, xObj, yObj, 100, 100);
+    case 'MOON':
+      image(imgLUA, xObj, yObj, 100, 100);
+    case 'SUN':
+      image(imgSOL, xObj, yObj, 100, 100);
+    case 'CROSS':
+      image(imgCRUZ, xObj, yObj, 100, 100);
+    case 'RING':
+      image(imgANEL, xObj, yObj, 100, 100);
+    case 'PYRAMID':
+      image(imgPIRAMIDE, xObj, yObj, 100, 100);
+    case 'BONE':
+      image(imgOSSO, xObj, yObj, 100, 100);
+    case 'HEART':
+      image(imgCORACAO, xObj, yObj, 100, 100);
+    case 'RHOMBUS':
+      image(imgLOSANGO, xObj, yObj, 100, 100);
+    case 'SPADE':
+      image(imgESPADA, xObj, yObj, 100, 100);
+    case 'CLUBS':
+      image(imgPAUS, xObj, yObj, 100, 100);
+    case 'ARROW':
+      image(imgFLECHA, xObj, yObj, 100, 100);
+  }
