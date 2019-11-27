@@ -134,7 +134,7 @@ function jogar(){
   
   background(imgJogo);
   
-  image(imgNave, xNave, yNave, 100, 100);
+  gerarObjeto(novoObj);
   
   if(vidasObj>0){
     gerarCabecalho(false);
