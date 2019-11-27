@@ -36,7 +36,6 @@ var pontos = 0;
 var atirando = false;
 
 var obj;
-var idObj;
 var qntLoop = 0;
 
 function setup() {
@@ -139,7 +138,54 @@ function jogar(){
   
   if(vidasObj>0){
     gerarCabecalho(false);
-   
+    
+    switch(obj){
+      case 'CIRCLE':
+      image(imgCIRCULO, xObj, yObj, 100, 100);
+    case 'TRIANGLE':
+      image(imgTRIANGULO, xObj, yObj, 100, 100);
+    case 'SQUARE':
+      image(imgQUADRADO, xObj, yObj, 100, 100);
+    case 'RECTANGLE':
+      image(imgRETANGULO, xObj, yObj, 100, 100);
+    case 'PARALLELEPIPED':
+      image(imgPARALELE, xObj, yObj, 100, 100);  
+    case 'TRAPEZE':
+      image(imgTRAPEZIO, xObj, yObj, 100, 100);
+    case 'ELIPSE':
+      image(imgELIPSE, xObj, yObj, 100, 100);
+    case 'STAR':
+      image(imgESTRELA, xObj, yObj, 100, 100);
+      return ;
+    case 'PENTAGON':
+      image(imgPENTAGONO, xObj, yObj, 100, 100);
+    case 'HEXAGON':
+      image(imgHEXAGONO, xObj, yObj, 100, 100);
+    case 'MOON':
+      image(imgLUA, xObj, yObj, 100, 100);
+    case 'SUN':
+      image(imgSOL, xObj, yObj, 100, 100);
+    case 'CROSS':
+      image(imgCRUZ, xObj, yObj, 100, 100);
+    case 'RING':
+      image(imgANEL, xObj, yObj, 100, 100);
+      return ;
+    case 'PYRAMID':
+      image(imgPIRAMIDE, xObj, yObj, 100, 100);
+    case 'BONE':
+      image(imgOSSO, xObj, yObj, 100, 100);
+    case 'HEART':
+      image(imgCORACAO, xObj, yObj, 100, 100);
+    case 'RHOMBUS':
+        image(imgLOSANGO, xObj, yObj, 100, 100);  
+      case 'SPADE':
+        image(imgESPADA, xObj, yObj, 100, 100);
+      case 'CLUBS':
+        image(imgPAUS, xObj, yObj, 100, 100);      
+      case 'ARROW':
+        image(imgFLECHA, xObj, yObj, 100, 100);
+    }
+    
     yObj += 1;
     
     if(yObj > 600){
@@ -362,67 +408,67 @@ function figura(){
   var valor = Math.floor(Math.random() * 21);
   switch(valor){
     case 0:
-      image(imgCIRCULO, xObj, yObj, 100, 100);
+      //image(imgCIRCULO, xObj, yObj, 100, 100);
       return 'CIRCLE';
     case 1:
-      image(imgTRIANGULO, xObj, yObj, 100, 100);
+      //image(imgTRIANGULO, xObj, yObj, 100, 100);
       return 'TRIANGLE';
     case 2:
-      image(imgQUADRADO, xObj, yObj, 100, 100);
+      //image(imgQUADRADO, xObj, yObj, 100, 100);
       return 'SQUARE';
     case 3:
-      image(imgRETANGULO, xObj, yObj, 100, 100);
+      //image(imgRETANGULO, xObj, yObj, 100, 100);
       return 'RECTANGLE';
     case 4:
-      image(imgPARALELE, xObj, yObj, 100, 100);  
+      //image(imgPARALELE, xObj, yObj, 100, 100);  
       return 'PARALLELEPIPED';
     case 5:
-      image(imgTRAPEZIO, xObj, yObj, 100, 100);
+      //image(imgTRAPEZIO, xObj, yObj, 100, 100);
       return 'TRAPEZE';
     case 6:
-      image(imgELIPSE, xObj, yObj, 100, 100);
+      //image(imgELIPSE, xObj, yObj, 100, 100);
       return 'ELIPSE';
     case 7:
-      image(imgESTRELA, xObj, yObj, 100, 100);
+      //image(imgESTRELA, xObj, yObj, 100, 100);
       return 'STAR';
     case 8:
-      image(imgPENTAGONO, xObj, yObj, 100, 100);
+      //image(imgPENTAGONO, xObj, yObj, 100, 100);
       return 'PENTAGON';
     case 9:
-      image(imgHEXAGONO, xObj, yObj, 100, 100);
+      //image(imgHEXAGONO, xObj, yObj, 100, 100);
       return 'HEXAGON';
     case 10:
-      image(imgLUA, xObj, yObj, 100, 100);
+      //image(imgLUA, xObj, yObj, 100, 100);
       return 'MOON';
     case 11:
-      image(imgSOL, xObj, yObj, 100, 100);
+      //image(imgSOL, xObj, yObj, 100, 100);
       return 'SUN';
     case 12:
-      image(imgCRUZ, xObj, yObj, 100, 100);
+      //image(imgCRUZ, xObj, yObj, 100, 100);
       return 'CROSS';
     case 13:
-      image(imgANEL, xObj, yObj, 100, 100);
+      //image(imgANEL, xObj, yObj, 100, 100);
       return 'RING';
     case 14:
-      image(imgPIRAMIDE, xObj, yObj, 100, 100);
+      //image(imgPIRAMIDE, xObj, yObj, 100, 100);
       return 'PYRAMID';
     case 15:
-      image(imgOSSO, xObj, yObj, 100, 100);
+      //image(imgOSSO, xObj, yObj, 100, 100);
       return 'BONE';
     case 16:
-      image(imgCORACAO, xObj, yObj, 100, 100);
+      //image(imgCORACAO, xObj, yObj, 100, 100);
       return 'HEART';
     case 17:
-      image(imgLOSANGO, xObj, yObj, 100, 100);
+      //image(imgLOSANGO, xObj, yObj, 100, 100);
       return 'RHOMBUS';
     case 18:
-      image(imgESPADA, xObj, yObj, 100, 100);
+      //image(imgESPADA, xObj, yObj, 100, 100);
       return 'SPADE';
     case 19:
-      image(imgPAUS, xObj, yObj, 100, 100);
+      //image(imgPAUS, xObj, yObj, 100, 100);
       return 'CLUBS';
     case 20:
-      image(imgFLECHA, xObj, yObj, 100, 100);
+      //image(imgFLECHA, xObj, yObj, 100, 100);
       return 'ARROW';
   }
 }
