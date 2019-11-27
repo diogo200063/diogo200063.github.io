@@ -183,7 +183,6 @@ function jogar(){
   
   if(vidasObj>0){
     gerarCabecalho(false);
-    rect(xObj, yObj, 100, 100);
   
     yObj += 1;
     
