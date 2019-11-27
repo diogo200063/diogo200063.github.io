@@ -134,6 +134,8 @@ function jogar(){
   
   background(imgJogo);
  
+  image(imgNave,xNave,yNave,100,100);
+  
   switch(obj){
     case 'CIRCLE':
       image(imgCIRCULO, xObj, yObj, 100, 100);
