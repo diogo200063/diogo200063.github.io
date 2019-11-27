@@ -135,7 +135,7 @@ function jogar(){
   background(imgJogo);
  
   image(imgNave,xNave,yNave,100,100);
-  
+  /*
   switch(obj){
     case 'CIRCLE':
       image(imgCIRCULO, xObj, yObj, 100, 100);
@@ -179,7 +179,7 @@ function jogar(){
       image(imgPAUS, xObj, yObj, 100, 100);
     case 'ARROW':
       image(imgFLECHA, xObj, yObj, 100, 100);
-  }
+  }*/
   
   if(vidasObj>0){
     gerarCabecalho(false);
