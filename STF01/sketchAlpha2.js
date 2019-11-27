@@ -139,7 +139,7 @@ function jogar(){
   
   if(vidasObj>0){
     gerarCabecalho(false);
-  
+   
     yObj += 1;
     
     if(yObj > 600){
@@ -340,8 +340,6 @@ function gerarCabecalho(novoObj){
     obj = figura();
   }
   
-  console.log("Objeto: "+obj);
-  
   text(obj, 30, 50);
   
   textSize(30);
@@ -364,46 +362,67 @@ function figura(){
   var valor = Math.floor(Math.random() * 21);
   switch(valor){
     case 0:
+      image(imgCIRCULO, xObj, yObj, 100, 100);
       return 'CIRCLE';
     case 1:
+      image(imgTRIANGULO, xObj, yObj, 100, 100);
       return 'TRIANGLE';
     case 2:
+      image(imgQUADRADO, xObj, yObj, 100, 100);
       return 'SQUARE';
     case 3:
+      image(imgRETANGULO, xObj, yObj, 100, 100);
       return 'RECTANGLE';
     case 4:
+      image(imgPARALELE, xObj, yObj, 100, 100);  
       return 'PARALLELEPIPED';
     case 5:
+      image(imgTRAPEZIO, xObj, yObj, 100, 100);
       return 'TRAPEZE';
     case 6:
+      image(imgELIPSE, xObj, yObj, 100, 100);
       return 'ELIPSE';
     case 7:
+      image(imgESTRELA, xObj, yObj, 100, 100);
       return 'STAR';
     case 8:
+      image(imgPENTAGONO, xObj, yObj, 100, 100);
       return 'PENTAGON';
     case 9:
+      image(imgHEXAGONO, xObj, yObj, 100, 100);
       return 'HEXAGON';
     case 10:
+      image(imgLUA, xObj, yObj, 100, 100);
       return 'MOON';
     case 11:
+      image(imgSOL, xObj, yObj, 100, 100);
       return 'SUN';
     case 12:
+      image(imgCRUZ, xObj, yObj, 100, 100);
       return 'CROSS';
     case 13:
+      image(imgANEL, xObj, yObj, 100, 100);
       return 'RING';
     case 14:
+      image(imgPIRAMIDE, xObj, yObj, 100, 100);
       return 'PYRAMID';
     case 15:
+      image(imgOSSO, xObj, yObj, 100, 100);
       return 'BONE';
     case 16:
+      image(imgCORACAO, xObj, yObj, 100, 100);
       return 'HEART';
     case 17:
+      image(imgLOSANGO, xObj, yObj, 100, 100);
       return 'RHOMBUS';
     case 18:
+      image(imgESPADA, xObj, yObj, 100, 100);
       return 'SPADE';
     case 19:
+      image(imgPAUS, xObj, yObj, 100, 100);
       return 'CLUBS';
     case 20:
+      image(imgFLECHA, xObj, yObj, 100, 100);
       return 'ARROW';
   }
 }
