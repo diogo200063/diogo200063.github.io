@@ -106,7 +106,7 @@ function menu(){
   fill(0);
   text('Jogar', 335, 190);
   
-  fill('rgba(0, 150, 136,0.9)'); 
+  fill('rgba(0, 150, 136, 0.9)'); 
   noStroke();
   rect(190, 250, 400, 70, 100); 
   
